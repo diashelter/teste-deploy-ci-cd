@@ -26,6 +26,7 @@ jobs:
           username: helter
           server: ip-45-79-34-51.cloudezapp.io
           port: 22122 # default is 22
+          password: ${{ secrets.SSH_PASSWORD }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
           
