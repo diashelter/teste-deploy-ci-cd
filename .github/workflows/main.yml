@@ -32,7 +32,9 @@ jobs:
           # will put all file under this path
           local_path: ./* # default is ./*
           # files will copy to under remote_path
-          remote_path: /srv/app560.2d4f2233.configr.cloud/www
+          remote_path: /srv/app560.2d4f2233.configr.cloud/www/depoly
+
+          delete_remote_files: true
           
           # sftp args
           args: '-o ConnectTimeout=5'
