@@ -21,13 +21,13 @@ jobs:
       - uses: actions/checkout@v2
           
       - name: SFTP Deploy
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: helter
           server: ip-45-79-34-51.cloudezapp.io
           port: 22122 # default is 22
           password: ${{ secrets.SSH_PASSWORD }}
-
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           
           # will put all file under this path
           local_path: ./* # default is ./*
